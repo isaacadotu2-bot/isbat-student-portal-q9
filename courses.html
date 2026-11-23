@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Courses - ISBAT University</title>
+  <link rel="stylesheet" href="portal.css">
+  <style>
+    /* Internal CSS: timetable colours by course */
+    .webtech  { background-color: #D6EAF8; }
+    .cprog    { background-color: #FCE8D5; }
+    .database { background-color: #E8DAEF; }
+    .networks { background-color: #D5F5E3; }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <img class="logo" src="isbat-logo.png" alt="ISBAT University logo">
+    <div class="student-name">Student Name</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html" class="active">My Courses</a>
+      <a href="fee.html">Fee Statement</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <div class="page-title">
+      <h1>My Courses</h1>
+      <p class="date">Semester 2, 2025/2026</p>
+    </div>
+
+    <h2 class="section-title">Enrolled Courses</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+            <th>Lecturer</th>
+            <th>Room</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ICT 2101</td>
+            <td>Web Technologies</td>
+            <td>3</td>
+            <td>Mr. K. Mukasa</td>
+            <td>LAB 2</td>
+            <td style="background-color: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+          </tr>
+          <tr>
+            <td>ICT 2103</td>
+            <td>C Programming</td>
+            <td>4</td>
+            <td>Ms. P. Namatovu</td>
+            <td>LAB 1</td>
+            <td style="background-color: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+          </tr>
+          <tr>
+            <td>ICT 2105</td>
+            <td>Database Systems</td>
+            <td>3</td>
+            <td>Dr. J. Okello</td>
+            <td>Room 204</td>
+            <td style="background-color: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+          </tr>
+          <tr>
+            <td>ICT 2107</td>
+            <td>Computer Networks</td>
+            <td>3</td>
+            <td>Mr. S. Byaruhanga</td>
+            <td>Room 301</td>
+            <td style="background-color: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+          </tr>
+          <tr>
+            <td>ICT 2109</td>
+            <td>Software Engineering</td>
+            <td>3</td>
+            <td>Dr. R. Nakimera</td>
+            <td>Room 105</td>
+            <td style="background-color: #FAEEDA; color: #633806; font-weight: bold;">Pending</td>
+          </tr>
+          <tr>
+            <td>ICT 2111</td>
+            <td>Data Structures</td>
+            <td>4</td>
+            <td>Ms. A. Kyomuhendo</td>
+            <td>LAB 3</td>
+            <td style="background-color: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title">Weekly Timetable (8am - 5pm)</h2>
+    <div class="table-wrap">
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00 - 09:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>09:00 - 10:00</td>
+            <td></td><td></td>
+            <td class="database">Database Systems<br>ICT 2105 - Room 204</td>
+            <td></td><td></td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td class="webtech" rowspan="2">Web Technologies<br>ICT 2101 - LAB 2</td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:00</td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>12:00 - 13:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>13:00 - 14:00</td>
+            <td></td><td></td><td></td>
+            <td class="networks" rowspan="2">Computer Networks<br>ICT 2107 - Room 301</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>14:00 - 15:00</td>
+            <td></td>
+            <td class="cprog" rowspan="2">C Programming<br>ICT 2103 - LAB 1</td>
+            <td></td><td></td>
+          </tr>
+          <tr>
+            <td>15:00 - 16:00</td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>16:00 - 17:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

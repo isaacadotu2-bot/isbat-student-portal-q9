@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - ISBAT University</title>
+  <link rel="stylesheet" href="portal.css">
+  <style>
+    /* Internal CSS: quick-links grid (2 x 2) */
+    .quick-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .quick-card {
+      background-color: #FFFFFF;
+      border: 1px solid #DDDDDD;
+      border-radius: 10px;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .quick-card .ql {
+      display: block;
+      color: #666666;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .quick-card a {
+      color: #1A1A2E;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .quick-card a:hover {
+      color: #3E3E8A;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <img class="logo" src="isbat-logo.png" alt="ISBAT University logo">
+    <div class="student-name">Student Name</div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="courses.html">My Courses</a>
+      <a href="fee.html">Fee Statement</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <div class="page-title">
+      <h1>Welcome, Student Name</h1>
+      <p class="date">Thursday, 19 November 2026</p>
+      <span style="background-color: #EAF3DE; color: #27500A; padding: 4px 12px; border-radius: 12px; font-weight: bold; font-size: 14px;">Active</span>
+    </div>
+
+    <section class="metrics">
+      <div class="metric-card">
+        <div class="label">GPA</div>
+        <div class="value">3.42</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Credit Hours</div>
+        <div class="value">62 / 120</div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Outstanding Fee Balance</div>
+        <div class="value">UGX 350,000</div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Quick Links</h2>
+    <section class="quick-grid">
+      <div class="quick-card">
+        <span class="ql">Go to</span>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="quick-card">
+        <span class="ql">Go to</span>
+        <a href="courses.html">My Courses</a>
+      </div>
+      <div class="quick-card">
+        <span class="ql">Go to</span>
+        <a href="fee.html">Fee Statement</a>
+      </div>
+      <div class="quick-card">
+        <span class="ql">Go to</span>
+        <a href="#">Update Profile</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
